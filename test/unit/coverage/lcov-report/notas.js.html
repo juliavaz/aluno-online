@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for nota.js</title>
+    <title>Code coverage report for notas.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> nota.js</h1>
+        <h1><a href="index.html">All files</a> notas.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">79.31% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>29/29</span>
+                <span class='fraction'>23/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">15.38% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>2/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">79.31% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>29/29</span>
+                <span class='fraction'>23/29</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -89,63 +89,63 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">26x</span>
-<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Nota {
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Notas {
     constructor(disciplina, a1, a2, a3) {
         this.disciplina = disciplina;
         this.a1 = a1;
         this.a2 = a2;
         this.a3 = a3;
-		this.media = this.mediaFinal();
     }
 &nbsp;
-    mediaFinal() {
-        return Math.max(
-            0.4 * this.a1 + 0.6 * this.a2, 
-            0.4 * this.a1 + 0.6 * this.a3, 
-            0.4 * this.a3 + 0.6 * this.a2
-        );
-    }
+<span class="fstat-no" title="function not covered" >    mediaFinal() {</span>
+<span class="cstat-no" title="statement not covered" >        return Math.max(</span>
+<span class="cstat-no" title="statement not covered" >            0.4 * this.a1 + 0.6 * this.a2, </span>
+<span class="cstat-no" title="statement not covered" >            0.4 * this.a1 + 0.6 * this.a3, </span>
+<span class="cstat-no" title="statement not covered" >            0.4 * this.a3 + 0.6 * this.a2</span>
+<span class="cstat-no" title="statement not covered" >        );</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     mediaCA() {
-        if (this.media &gt;= 9.0) { return "SS" }
-        else if (this.media &gt;= 7.0) { return "MS" }
-        else if (this.media &gt;= 5.0) { return "MM" }
-        else if (this.media &gt;= 3.0) { return "MI" }
-        else if (this.media &gt;= 0.1) { return "II" }
-        else { return "SR" };
-    }
+        if (<span class="branch-0 cbranch-no" title="branch not covered" >this.mediaFinal &gt;= 9.0 &amp;&amp; this.mediaFinal &lt;= 10) <span class="branch-0 cbranch-no" title="branch not covered" >r</span>eturn "</span>SS";
+        if (<span class="branch-0 cbranch-no" title="branch not covered" >this.mediaFinal &gt;= 7.0 &amp;&amp; this.mediaFinal &lt;= 8.9) <span class="branch-0 cbranch-no" title="branch not covered" >r</span>eturn "</span>MS";
+        if (<span class="branch-0 cbranch-no" title="branch not covered" >this.mediaFinal &gt;= 5.0 &amp;&amp; this.mediaFinal &lt;= 6.9) <span class="branch-0 cbranch-no" title="branch not covered" >r</span>eturn "</span>MM";
+        if (<span class="branch-0 cbranch-no" title="branch not covered" >this.mediaFinal &gt;= 3.0 &amp;&amp; this.mediaFinal &lt;= 4.9) <span class="branch-0 cbranch-no" title="branch not covered" >r</span>eturn "</span>MI";
+        if (<span class="branch-0 cbranch-no" title="branch not covered" >this.mediaFinal &gt;= 0.1 &amp;&amp; this.mediaFinal &lt;= 2.9) <span class="branch-0 cbranch-no" title="branch not covered" >r</span>eturn "</span>II";
+        if (this.mediaFinal &gt;= 0 ) <span class="branch-0 cbranch-no" title="branch not covered" >return "</span>SR";
 &nbsp;
+        return "Erro ao mensurar a nota" + this.mediaFinal;
+    }
 }
 &nbsp;
-module.exports = Nota;
+module.exports = Notas;
 &nbsp;
 &nbsp;</pre></td></tr></table></pre>
 
@@ -154,7 +154,7 @@ module.exports = Nota;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Nov 28 2021 13:13:06 GMT-0300 (Horário Padrão de Brasília)
+                at Sat Nov 27 2021 19:04:35 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="prettify.js"></script>
