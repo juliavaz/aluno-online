@@ -13,7 +13,7 @@ router.get('/novo', function(req, res, next) {
 
 router.post('/novo', function(req, res, next) {
   const requerimento = {
-    id:  Math.floor(100000 + Math.random() * 900000),
+    id:  Math.floor( 100000 + Math.random() * 900000 ),
     disciplina: req.body.disciplina,
     prova: req.body.prova,
     argumentacao: req.body.argumentacao,
